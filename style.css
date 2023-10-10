@@ -91,13 +91,11 @@ section {
 .titulomeses {
   display: flex;
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgb(25, 119, 212),
-    rgb(241, 102, 165),
-    rgb(255, 249, 89),
-    rgb(243, 166, 166)
-  );
+  background: linear-gradient(to bottom,
+      rgb(25, 119, 212),
+      rgb(241, 102, 165),
+      rgb(255, 249, 89),
+      rgb(243, 166, 166));
   border-radius: 10px;
   justify-content: center;
 }
@@ -135,13 +133,15 @@ img {
 }
 
 .left-link {
-  margin-right: 159px; /* Espacio a la derecha del icono de corazón */
+  margin-right: 159px;
+  /* Espacio a la derecha del icono de corazón */
 }
 
 @media (max-width: 1463px) {
   .calendario {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .icono {
     font-size: 30px;
     margin: -13px;
@@ -155,11 +155,13 @@ img {
     grid-template-columns: repeat(2, 1fr);
 
   }
+
   section {
     height: 100vh;
     width: 70%;
     margin-right: 23px;
   }
+
   .icono {
     font-size: 30px;
     margin: -13px;
@@ -173,11 +175,13 @@ img {
     grid-template-columns: repeat(1, 1fr);
 
   }
+
   section {
     height: 100vh;
     width: 70%;
     margin-right: 23px;
   }
+
   .icono {
     font-size: 30px;
     margin: -13px;
@@ -191,11 +195,13 @@ img {
     grid-template-columns: repeat(1, 1fr);
 
   }
+
   section {
     height: 100vh;
     width: 70%;
     margin-right: 60px;
   }
+
   .icono {
     font-size: 25px;
     margin-bottom: 1px;
@@ -203,33 +209,41 @@ img {
 
 }
 
-@media (max-width: 280px) { 
+@media (max-width: 280px) {
+
   .diasmeses td,
   .diasmeses th {
     font-size: 8px;
     padding: 5px 2px;
   }
+
   .diasmeses .diasromanos {
     font-size: 9px;
   }
+
   .titulomeses {
     padding: -10px;
   }
+
   .diasmeses {
     width: 83%;
     margin: 0 auto;
+
     .calendario {
       grid-template-columns: 1fr;
       gap: 5px;
       position: absolute;
     }
+
     section {
       width: -70%;
       align-items: center;
     }
+
     img {
       height: 95px;
     }
+
     .mes {
       font-weight: 800;
       font-size: 30px;
@@ -241,45 +255,53 @@ img {
 
     .meses {
       width: 97%;
-  
+
     }
 
     .icono {
       font-size: 25px;
       margin-bottom: 1px;
     }
-  
+
   }
 }
 
 @media (max-width: 240px) {
+
   .diasmeses td,
   .diasmeses th {
     font-size: 8px;
     padding: 5px 2px;
   }
+
   .diasmeses .diasromanos {
     font-size: 9px;
   }
+
   .titulomeses {
     padding: -10px;
   }
+
   .diasmeses {
     width: 83%;
     margin: 0 auto;
   }
+
   .calendario {
     grid-template-columns: repeat(1, 1fr);
     gap: 5px;
     position: absolute;
   }
+
   section {
     width: -70%;
     align-items: center;
   }
+
   img {
     height: 95px;
   }
+
   .mes {
     font-weight: 800;
     font-size: 30px;
@@ -299,23 +321,26 @@ img {
   }
 }
 
-  @media (max-width: 100px) {
-    .diasmeses td,
-    .diasmeses th {
-      font-size: 16px;
-      padding: 3px 1px;
-    }
-    .diasmeses .diasromanos {
-      font-size: 16px;
-    }
-    .meses {
-      width: 97%;
-      margin-left: 2px;
-    }
-    .icono {
-      font-size: 25px;
-      margin-bottom: 1px;
-    }
-  
+@media (max-width: 100px) {
+
+  .diasmeses td,
+  .diasmeses th {
+    font-size: 16px;
+    padding: 3px 1px;
   }
 
+  .diasmeses .diasromanos {
+    font-size: 16px;
+  }
+
+  .meses {
+    width: 97%;
+    margin-left: 2px;
+  }
+
+  .icono {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
+}
