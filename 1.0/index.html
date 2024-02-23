@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendario</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="preload" href="img/dostres.png" as="image">
+  <link rel="preload" href="styles.css" as="style">
+</head>
+
+<body>
+  <section>
+    <div class="calendario">
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Enero</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+            </tr>
+            <tr>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+            </tr>
+            <tr>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+            </tr>
+            <tr>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+            </tr>
+            <tr>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+              <td class="diasdemas">10</td>
+              <td class="diasdemas">11</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Febrero</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+            </tr>
+            <tr>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+            </tr>
+            <tr>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+            </tr>
+            <tr>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+            </tr>
+            <tr>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+              <td class="diasdemas">10</td>
+              <td class="diasdemas">11</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Marzo</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">26</td>
+              <td class="diasdemas">27</td>
+              <td class="diasdemas">28</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+            </tr>
+            <tr>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+            </tr>
+            <tr>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+            </tr>
+            <tr>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+            </tr>
+            <tr>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Abril</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">26</td>
+              <td class="diasdemas">27</td>
+              <td class="diasdemas">28</td>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+            </tr>
+            <tr>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+            </tr>
+            <tr>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+            </tr>
+            <tr>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+            </tr>
+            <tr>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias26">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+            </tr>
+            <tr>
+              <td class="dias">30</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Mayo</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">30</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+            </tr>
+            <tr>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+            </tr>
+            <tr>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+            </tr>
+            <tr>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+            </tr>
+            <tr>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+              <td class="diasdemas">10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Junio</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">28</td>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+            </tr>
+            <tr>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+            </tr>
+            <tr>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+            </tr>
+            <tr>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+            </tr>
+            <tr>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="diasdemas">1</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Julio</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">25</td>
+              <td class="diasdemas">26</td>
+              <td class="diasdemas">27</td>
+              <td class="diasdemas">28</td>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="dias">1</td>
+            </tr>
+            <tr>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+            </tr>
+            <tr>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+            </tr>
+            <tr>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+            </tr>
+            <tr>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+            </tr>
+            <tr>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Agosto</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+            </tr>
+            <tr>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+            </tr>
+            <tr>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+            </tr>
+            <tr>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+            </tr>
+            <tr>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Septiembre</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">27</td>
+              <td class="diasdemas">28</td>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+            </tr>
+            <tr>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+            </tr>
+            <tr>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+            </tr>
+            <tr>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+            </tr>
+            <tr>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Octubre</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+            </tr>
+            <tr>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+            </tr>
+            <tr>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+            </tr>
+            <tr>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+            </tr>
+            <tr>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+              <td class="diasdemas">10</td>
+              <td class="diasdemas">11</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Noviembre</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="diasdemas">31</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+            </tr>
+            <tr>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+            </tr>
+            <tr>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+            </tr>
+            <tr>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+            </tr>
+            <tr>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+            </tr>
+            <tr>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+              <td class="diasdemas">7</td>
+              <td class="diasdemas">8</td>
+              <td class="diasdemas">9</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="meses">
+        <div class="titulomeses">
+          <img src="img/dostres.png" alt="" loading="lazy" decoding="async" />
+          <p class="mes">Diciembre</p>
+        </div>
+        <div class="icono">
+          <a href="#" class="left-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+          <a href="#" class="right-link"><i class="fa-solid fa-grip-lines-vertical" title="estetica"></i></a>
+        </div>
+        <table class="diasmeses">
+          <thead>
+            <tr>
+              <th class="diasromanos">Dom</th>
+              <th class="diasromanos">Lun</th>
+              <th class="diasromanos">Mart</th>
+              <th class="diasromanos">Mie</th>
+              <th class="diasromanos">Jue</th>
+              <th class="diasromanos">Vie</th>
+              <th class="diasromanos">Sab</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="diasdemas">26</td>
+              <td class="diasdemas">27</td>
+              <td class="diasdemas">28</td>
+              <td class="diasdemas">29</td>
+              <td class="diasdemas">30</td>
+              <td class="dias">1</td>
+              <td class="dias">2</td>
+            </tr>
+            <tr>
+              <td class="dias">3</td>
+              <td class="dias">4</td>
+              <td class="dias">5</td>
+              <td class="dias">6</td>
+              <td class="dias">7</td>
+              <td class="dias">8</td>
+              <td class="dias">9</td>
+            </tr>
+            <tr>
+              <td class="dias">10</td>
+              <td class="dias">11</td>
+              <td class="dias">12</td>
+              <td class="dias">13</td>
+              <td class="dias">14</td>
+              <td class="dias">15</td>
+              <td class="dias">16</td>
+            </tr>
+            <tr>
+              <td class="dias">17</td>
+              <td class="dias">18</td>
+              <td class="dias">19</td>
+              <td class="dias">20</td>
+              <td class="dias">21</td>
+              <td class="dias">22</td>
+              <td class="dias">23</td>
+            </tr>
+            <tr>
+              <td class="dias">24</td>
+              <td class="dias">25</td>
+              <td class="dias">26</td>
+              <td class="dias">27</td>
+              <td class="dias">28</td>
+              <td class="dias">29</td>
+              <td class="dias">30</td>
+            </tr>
+            <tr>
+              <td class="dias">31</td>
+              <td class="diasdemas">1</td>
+              <td class="diasdemas">2</td>
+              <td class="diasdemas">3</td>
+              <td class="diasdemas">4</td>
+              <td class="diasdemas">5</td>
+              <td class="diasdemas">6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

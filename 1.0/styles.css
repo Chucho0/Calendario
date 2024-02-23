@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+  }
+  
+  section {
+    height: 100vh;
+    width: 70%;
+  }
+  
+  .calendario {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 10px;
+  }
+  
+  .meses {
+    border: 2px solid rgb(0, 0, 0);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .diasmeses {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  .diasmeses td {
+    border-color: black;
+    border-style: solid;
+    border-width: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  
+  .diasmeses th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+  
+  .diasmeses .diasdemas {
+    border-color: #ffffff;
+    color: #c0c0c0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .diasmeses .diasromanos {
+    border-color: #ffffff;
+    color: rgb(239, 109, 109);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .diasmeses .dias {
+    border-color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .titulomeses {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to bottom,
+        rgb(25, 119, 212),
+        rgb(241, 102, 165),
+        rgb(255, 249, 89),
+        rgb(243, 166, 166));
+    border-radius: 10px;
+    justify-content: center;
+  }
+  
+  .dias26 {
+    border-color: #ffffff;
+    color: rgb(239, 109, 109);
+    font-weight: bold;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .mes {
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(239, 109, 109);
+    margin-top: 107px;
+    margin-bottom: 13px;
+  }
+  
+  img {
+    height: 125px;
+  }
+  
+  .icono {
+    font-size: 30px;
+    margin: -13px;
+    margin-bottom: 1px;
+  }
+  
+  .left-link,
+  .right-link {
+    display: inline-block;
+    color: rgb(91, 165, 240);
+  }
+  
+  .left-link {
+    margin-right: 159px;
+  }
+  
+  @media (max-width: 1463px) {
+    .calendario {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .icono {
+      font-size: 30px;
+      margin: -13px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  @media (max-width: 1093px) {
+    .calendario {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    section {
+      height: 100vh;
+      width: 70%;
+      margin-right: 23px;
+    }
+  
+    .icono {
+      font-size: 30px;
+      margin: -13px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  @media (max-width: 719px) {
+    .calendario {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    section {
+      height: 100vh;
+      width: 70%;
+      margin-right: 23px;
+    }
+  
+    .icono {
+      font-size: 30px;
+      margin: -13px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .calendario {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    section {
+      height: 100vh;
+      width: 70%;
+      margin-right: 60px;
+    }
+  
+    .icono {
+      font-size: 25px;
+      margin-bottom: 1px;
+    }
+  }
+  
+  @media (max-width: 280px) {
+  
+    .diasmeses td,
+    .diasmeses th {
+      font-size: 8px;
+      padding: 5px 2px;
+    }
+  
+    .diasmeses .diasromanos {
+      font-size: 9px;
+    }
+  
+    .titulomeses {
+      padding: -10px;
+    }
+  
+    .diasmeses {
+      width: 83%;
+      margin: 0 auto;
+  
+      .calendario {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        position: absolute;
+      }
+  
+      section {
+        width: -70%;
+        align-items: center;
+      }
+  
+      img {
+        height: 95px;
+      }
+  
+      .mes {
+        font-weight: 800;
+        font-size: 30px;
+        color: rgb(239, 109, 109);
+        margin-top: 47px;
+        margin-bottom: 7px;
+        margin-right: 1px;
+      }
+  
+      .meses {
+        width: 97%;
+  
+      }
+  
+      .icono {
+        font-size: 25px;
+        margin-bottom: 1px;
+      }
+    }
+  }
+  
+  @media (max-width: 240px) {
+  
+    .diasmeses td,
+    .diasmeses th {
+      font-size: 8px;
+      padding: 5px 2px;
+    }
+  
+    .diasmeses .diasromanos {
+      font-size: 9px;
+    }
+  
+    .titulomeses {
+      padding: -10px;
+    }
+  
+    .diasmeses {
+      width: 83%;
+      margin: 0 auto;
+    }
+  
+    .calendario {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5px;
+      position: absolute;
+    }
+  
+    section {
+      width: -70%;
+      align-items: center;
+    }
+  
+    img {
+      height: 95px;
+    }
+  
+    .mes {
+      font-weight: 800;
+      font-size: 30px;
+      color: rgb(239, 109, 109);
+      margin-top: 47px;
+      margin-bottom: 7px;
+      margin-right: 1px;
+    }
+  
+    .icono {
+      font-size: 25px;
+      margin-bottom: 1px;
+    }
+  
+    .meses {
+      width: 97%;
+    }
+  }
+  
+  @media (max-width: 100px) {
+  
+    .diasmeses td,
+    .diasmeses th {
+      font-size: 16px;
+      padding: 3px 1px;
+    }
+  
+    .diasmeses .diasromanos {
+      font-size: 16px;
+    }
+  
+    .meses {
+      width: 97%;
+      margin-left: 2px;
+    }
+  
+    .icono {
+      font-size: 25px;
+      margin-bottom: 1px;
+    }
+  }
